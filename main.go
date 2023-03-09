@@ -23,7 +23,7 @@ func main() {
 	gc.Set("key5", "ok")
 	gc.Set("key6", "hallo")
 
-	fmt.Println(gc.Keys(true))
+	fmt.Println(gc.Keys(false))
 
 	value1, err := gc.Get("key1")
 	if err != nil {
