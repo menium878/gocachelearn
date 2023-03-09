@@ -23,7 +23,7 @@ func main() {
 	gc.Set("key5", "ok")
 	gc.Set("key6", "hallo")
 
-	fmt.Println(gc.Keys(false))
+	fmt.Println(gc.Keys(true)) // bool checkes if the time expired, a nie czy nie mieści się już w pamięci (size)
 
 	value1, err := gc.Get("key1")
 	if err != nil {
