@@ -41,7 +41,7 @@ func main() {
 			}
 			fmt.Println("Get:", value)
 	*/
-
+	// wrzucić w crud w najbliżym czasie choć jeszcze nie wiem jak przy użyciu fiber cache
 	var evictCounter, loaderCounter, purgeCounter int
 	gc := gcache.New(20).
 		LRU().
