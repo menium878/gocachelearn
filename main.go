@@ -69,6 +69,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+    //checking lsp
 	fmt.Println("Get:", value)
 	gc.Purge()
 	if loaderCounter != evictCounter+purgeCounter {
